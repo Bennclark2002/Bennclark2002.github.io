@@ -18,3 +18,8 @@ h1 {
     color: white;
     border-color: #3e8e41;
   }
+
+  .first-letter:first-letter {
+    font-size: 150%;
+    color: blue;
+}
