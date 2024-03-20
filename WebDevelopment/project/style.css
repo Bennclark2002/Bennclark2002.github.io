@@ -40,13 +40,11 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
-h1 {
+h2 {
   color: #336699;
 }
 
@@ -74,4 +72,38 @@ p {
 .first-letter:first-letter {
   font-size: 150%;
   color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    font-size:16px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-wrapper {
+      margin-left: 0;
+      text-align: center;
+      margin-top: 20px;
+  }
+  .content-wrapper img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
 }

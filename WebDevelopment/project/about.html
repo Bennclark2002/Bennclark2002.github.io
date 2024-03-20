@@ -4,12 +4,13 @@
     <!-- 
         HTML Document
         Title: About Me
-        Description: Making webpage about me and who i am as an individual. This proves that i can code in HTML in support of my website
+        Description: Making webpage about me and who I am as an individual. This proves that I can code in HTML in support of my website
         Author: Benjamin Clark
         Date: 2/1/2024
         Tested: 3/04/2024
     -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="information about me">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
@@ -17,18 +18,19 @@
     <title>About Me</title>
 </head>
 <body>
-    <nav>
+    <nav id="menu">
         <div class="nav-wrapper">
-            <button class="menu-icon" aria-label="Menu" aria-controls="menu" aria-expanded="false">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Menu" aria-controls="menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </label>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="reflection.html">Personal Reflection</a></li>
-                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="#contact.html">Contact</a></li>
                 <li class="dropdown">
                     <a href="#">Projects</a>
                     <ul class="dropdown-content">
@@ -39,10 +41,11 @@
                 </li>
             </ul>
         </div>
-    </nav>  
+    </nav>
     <main>
+        <div class="container">
         <div class="content-wrapper">
-            <img src="BEN CLARK.jpg" alt="Benjamin Clark">
+            <img src="BEN_CLARK.jpg" alt="Benjamin Clark">
             <div class="text-wrapper">
                 <header>
                     <h1>Benjamin Edward Clark</h1>
@@ -57,12 +60,13 @@
                 <a href="Benjamin_Clark_Resume_2023.pdf" target="_blank" class="resume-link">View My Resume</a> <!-- Fix file name and spaces -->
             </div>
         </div>
+        </div>
     </main>
     
     <footer>
         <p>Author: Benjamin Clark<br>
         <a href="mailto:becwpr@umsystem.edu">becwpr@umsystem.edu</a><br>
         &copy; 2024 Benjamin Clark</p>
-     </footer>
+    </footer>
 </body>
 </html>
