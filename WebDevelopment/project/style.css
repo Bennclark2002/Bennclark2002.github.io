@@ -1,4 +1,3 @@
-
 .main {
   display: flex;
   justify-content: center;
@@ -8,12 +7,16 @@ main p {
   margin: 0;
 }
 
-footer {
+.footer {
   margin-top: 20px;
   padding: 20px;
-  background-color: #333;
-  color: white
+  background-image: url('images/Footer_Image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
 }
+
 
 .content-wrapper {
   display: flex;
@@ -120,6 +123,55 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+@media print {
+  body {
+      font-family: 'Roboto Slab', serif;
+      color: black;
+      margin: 0.5in;
+      font-size: 12px;
+  }
+
+  h1 {
+      font-size: 18px; 
+  }
+
+  p {
+      font-size: 10px;
+      line-height: 1.2;
+  }
+
+  blockquote {
+      font-style: italic;
+  }
+
+  .video-container {
+      display: none; 
+  }
+
+  .content-wrapper img {
+      max-width: 40%; 
+      height: auto;
+  }
+
+  .text-wrapper {
+      margin-left: 20px;
+      max-width: 60%;
+  }
+
+  .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-size: 10px;
+      margin-top: 20px; 
+      padding: 20px;
+      background-color: #333;
+      color: white;
+  }
 }
 
 @media screen and (max-width: 768px) {
