@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Resetting default margin and padding */
+body, figure, h1, h2, h3, p, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Table styling */
+table {
+    width: 50%; /* Make the table half the size */
+    border-collapse: collapse;
+    border: 1px solid #000;
+    font-size: 14px; /* Smaller font size */
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 4px; /* Smaller padding */
+}
+
+thead th {
+    background-color: #ccc;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tfoot tr {
+    background-color: #ccc;
+}
+
+/* Caption styling */
+figcaption {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px; /* Smaller margin */
+    font-size: 16px; /* Smaller font size */
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%; /* Full width on small screens */
+    }
+
+    th, td {
+        padding: 3px; /* Adjust padding */
+    }
+}
+
