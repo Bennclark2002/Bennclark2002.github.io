@@ -1,43 +1,94 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-
-<!--
-
-Title: HTML Template
-
-Use: Template for other HTML files in the future
-
-Author: Benjamin Clark
-
-School/Term: University of Missouri 
-
-Developed: 02/07/2024
-
-Tested: 03/04/2024
-
--->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Benjamin Clark's HTML Template</title>
-<link rel="shortcut icon" type="image/png" href="Favicon/BEN_CLARK1.jpg">
+    <!-- 
+        HTML Document
+        Title: Contact Me
+        Description: Making webpage about me and who I am as an individual. This proves that I can code in HTML in support of my website
+        Author: Benjamin Clark
+        Date: 2/1/2024
+        Tested: 04/18/2024
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="information about me">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
+    <link rel="shortcut icon" type="image/png" href="Favicon/BEN_CLARK1.jpg">
+    
+    <title>Contact Me!</title>
 </head>
 <body>
+    <nav>
+        <div class="nav-wrapper">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reflection.html">Personal Reflection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#">Projects</a>
+                    <ul class="dropdown-content">
+                        <li><a href="project.html">Project 1</a></li>
+                        <li><a href="project2.html">Project 2</a></li>
+                        <li><a href="project3.html">Project 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-   <footer class="container footer">
-      <div class="footer-icons">
-          <div class="footer-icon">
-              <a href="tel:+1(888)-888-8888"><img src="images/phone_icon.png" alt="Phone"></a>
-              <span>Phone Number</span>
-          </div>
-          <div class="footer-icon">
-              <a href="mailto:becwpr@umsystem.edu"><img src="images/email_icon.png" alt="Email"></a>
-              <span>Email</span>
-          </div>
-      </div>
-      <p>Author: Benjamin Clark<br>
-      &copy; 2024 Benjamin Clark</p>
-  </footer>
+    <header>
+        <h1 class="centered-h1">Contact Me!</h1>
+    </header>
+
+    <main class="main">
+        <div class="content-container">
+            <div class="container">
+                <section class="content-wrapper">
+                    <header>
+                    </header>
+                    <form id="contact-form" action="mailto:becwpr@umsystem.edu" method="post" enctype="text/plain">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                
+                        <button type="submit">Send</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container footer">
+        <div class="footer-icons">
+            <div class="footer-icon">
+                <a href="tel:+1(888)-888-8888"><img src="images/phone_icon.png" alt="Phone"></a>
+                <span>Phone Number</span>
+            </div>
+            <div class="footer-icon">
+                <a href="mailto:becwpr@umsystem.edu"><img src="images/email_icon.png" alt="Email"></a>
+                <span>Email</span>
+            </div>
+        </div>
+        <p>Author: Benjamin Clark<br>
+        &copy; 2024 Benjamin Clark</p>
+    </footer>
 
 </body>
 </html>

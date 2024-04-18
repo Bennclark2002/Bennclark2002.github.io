@@ -1,7 +1,10 @@
-.main {
-  display: flex;
-  justify-content: center;
+main {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
 }
+
 main p {
   padding: 20px;
   margin: 0;
@@ -13,27 +16,30 @@ main p {
   left: 0;
   width: 100%;
   font-size: 10px;
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
   padding: 20px;
   background-image: url('images/Footer_Image.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: white;
+  color: #e8e0c8;
   z-index: 999;
+  height: 70px;
 }
 
 .centered-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Make the div full height of the viewport */
+  height: 100vh;
 }
 
 .centered-image img {
   max-width: 100%;
   max-height: 100%;
-} 
+}
 
 .content-wrapper {
   display: flex;
@@ -55,7 +61,14 @@ blockquote {
   display: block;
   text-align: center;
 }
-body, h1, h2, h3, p, ul, li {
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -80,7 +93,8 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: #22242c;
   font-family: 'Montserrat', sans-serif;
 }
@@ -94,6 +108,14 @@ header {
   color: #ffffff;
 }
 
+.centered-h2 {
+  text-align: center;
+}
+
+.centered-h1 {
+  text-align: center;
+}
+
 .text-box {
   background-color: #ffffff;
 }
@@ -101,10 +123,10 @@ header {
 .resume-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   text-decoration: none;
-  border: 2px solid #4CAF50;
+  border: 2px solid #4caf50;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
@@ -122,17 +144,17 @@ header {
 
 .footer-icons {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .footer-icon {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .footer-icon img {
-  width: 30px; 
+  width: 30px;
   height: 30px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .footer-icon:hover img {
@@ -141,12 +163,12 @@ header {
 
 .video-container {
   position: relative;
+  padding-top: 20px; /* Add padding to the top */
   padding-bottom: 25.25%;
   width: 50%;
-  margin: 0 auto;
+  margin: 20px auto;
   height: 0;
   overflow: hidden;
-  margin: bottom 20px;
 }
 
 .video-container iframe {
@@ -157,62 +179,110 @@ header {
   height: 100%;
 }
 
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
 
 @media print {
   body {
-      font-family: 'Roboto Slab', serif;
-      color: black;
-      margin: 0.5in;
-      font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    margin: 0.5in;
+    font-size: 12px;
   }
 
   h1 {
-      font-size: 18px; 
+    font-size: 18px;
   }
 
   p {
-      font-size: 10px;
-      line-height: 1.2;
+    font-size: 10px;
+    line-height: 1.2;
   }
 
   blockquote {
-      font-style: italic;
+    font-style: italic;
   }
 
   .video-container {
-      display: none; 
+    display: none;
   }
 
   .content-wrapper img {
-      max-width: 40%; 
-      height: auto;
+    max-width: 40%;
+    height: auto;
   }
 
+  .content-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
   .text-wrapper {
-      margin-left: 20px;
-      max-width: 60%;
+    margin-left: 20px;
+    max-width: 60%;
   }
 
   .footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      font-size: 10px;
-      margin-top: 20px; 
-      padding: 20px;
-      background-color: #333;
-      color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
   }
 }
 
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   .container {
     padding: 0 10px;
+    flex: 1;
   }
 
   img {
@@ -220,7 +290,7 @@ header {
   }
 
   p {
-    font-size:16px;
+    font-size: 16px;
   }
 
   .content-wrapper {
@@ -229,32 +299,90 @@ header {
   }
 
   .text-wrapper {
-      margin-left: 0;
-      text-align: center;
-      margin-top: 20px;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 20px;
   }
+
   .content-wrapper img {
     width: 100%;
     max-width: 300px;
     height: auto;
-}
+  }
 
-.footer-icons {
-  display: flex;
-  align-items: center; 
-}
+  .footer-icons {
+    display: flex;
+    align-items: center;
+  }
 
-.footer-icon {
-  margin-right: 10px; 
-}
+  .footer-icon {
+    margin-right: 10px;
+  }
 
-.footer-icon img {
-  width: 30px; 
-  height: 30px;
-  transition: transform 0.3s ease; 
-}
+  .footer-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
 
-.footer-icon:hover img {
-  transform: scale(1.1);
-}
+  .footer-icon:hover img {
+    transform: scale(1.1);
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+    height: 10px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  .video-container {
+    padding-bottom: 56.25%; 
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
