@@ -21,7 +21,7 @@ html, body {
   bottom: 0;
   left: 0;
   width: 100%;
-  font-size: 10px;
+  font-size: 12px;
   padding: 20px;
   background-image: url('images/Footer_Image.jpg');
   background-size: cover;
@@ -302,7 +302,7 @@ figcaption {
     bottom: 0;
     left: 0;
     width: 100%;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 20px;
     padding: 20px;
     background-color: #333;
@@ -368,28 +368,27 @@ figcaption {
   }
 
   .footer {
-    height: auto; /* Remove fixed height */
-    padding: 10px 20px; /* Adjust padding as needed */
-    margin-top: 20px; /* Ensure the footer sticks to the bottom */
+    height: auto; 
+    padding: 10px 20px; 
+    margin-top: 20px; 
   }
 
   .container.footer {
-    position: fixed; /* Fix the footer to the bottom of the viewport */
-    bottom: 0; /* Stick it to the bottom */
-    width: 100%; /* Take up the full width */
+    position: fixed; 
+    width: 100%; 
     height: 9%;
     padding: 5px;
     font-size: 10px;
 
-     /* Adjust padding as needed */
+    
   }
   .centered-image img {
-    max-width: 100%; /* Set maximum width to 100% of the viewport width */ /* Allow the height to adjust proportionally */
+    max-width: 100%; 
   }
 
   .project-section h2 {
-    margin-top: 5px; /* Adjust margin as needed */
-    margin-bottom: 5px; /* Adjust margin as needed */
+    margin-top: 5px; 
+    margin-bottom: 5px; 
   }
   form {
     width: 100%;
@@ -444,7 +443,7 @@ figcaption {
   }
 
   header {
-    margin-bottom: 20px; /* Add padding to the bottom of the header */
+    margin-bottom: 20px;
   }
 
   table {
