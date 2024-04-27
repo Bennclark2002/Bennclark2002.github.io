@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <!-- Title: Project.html
-         Use: homepage for my website
+    <!-- Title: Projects.html
+         Use: Combined project page
          Author: Benjamin Clark
          School/Term: University of Missouri 
          Developed: 02/07/2024
@@ -10,7 +10,7 @@
     -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Clark's website - Home</title>
+    <title>Benjamin Clark's website - Projects</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
     <link rel="shortcut icon" type="image/png" href="Favicon/BEN_CLARK1.jpg">
@@ -30,11 +30,11 @@
                 <li><a href="reflection.html">Personal Reflection</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li class="dropdown">
-                    <a href="#">Projects</a>
+                    <a href="project.html">Projects</a>
                     <ul class="dropdown-content">
-                        <li><a href="project.html">Project 1</a></li>
-                        <li><a href="project2.html">Project 2</a></li>
-                        <li><a href="project3.html">Project 3</a></li>
+                        <li><a href="project.html#f1-stats">F1 Stats</a></li>
+                        <li><a href="project.html#clippy-bird">ClippyBird</a></li>
+                        <li><a href="project.html#ticketing-system">Ticketing System</a></li>
                     </ul>
                 </li>
             </ul>
@@ -42,24 +42,58 @@
     </nav>
 
     <header>
-        <h1 class="centered-h1">Projects!</h1>
+        <h1 class="centered-h1">Projects</h1>
     </header>
 
-    <h2 class="centered-h2">F1 Stats Mobile App for IOS</h2>
-    <div class="video-container"style="margin-top: 20px;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HUp3AmyTHtY?si=7_-M-HLXj-fJSHtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div> 
+    <!-- Project 1 -->
+    <div id="F1 Stats Mobile App for iOS" class="project-section">
+        <h2 class="centered-h2">F1 Stats Mobile App for iOS</h2>
+        <div class="video-container" style="margin-top: 20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HUp3AmyTHtY?si=7_-M-HLXj-fJSHtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div> 
+        <main class="container">
+            <p>One of the projects that I have done recently on my own was an iOS app that I made for
+                Formula 1. I'm huge into the racing series so I wanted to incorporate that into an app that I
+                could make for my iPhone. I had a JSON that had all the information on it like Drivers' standings,
+                wins, laps led, and such like that. For the user using it you were able to choose the driver that
+                you wanted to learn about and once chosen you were able to see all the data. Eventually, I want
+                to add a second part where you can choose the circuit that you want to learn more info about,
+                and it will show you its location on Apple Maps as well as info about it.</p>
+        </main>
+    </div>
 
-    <main class="container" style="margin-top: 20px;">
-        <p>One of the projects that I have done recently on my own was an IOS app that I made for
-            Formula 1. I'm huge into the racing series so I wanted to incorporate that into an app that I
-            could make for my iPhone. I had a JSON that had all the information on it like Drivers' standings,
-            wins, laps led, and such like that. For the user using it you were able to choose the driver that
-            you wanted to learn about and once chosen you were able to see all the data. Eventually, I want
-            to add a second part where you can choose the circuit that you want to learn more info about,
-            and it will show you its location on Apple Maps as well as info about it.</p>
-    </main>
+    <!-- Project 2 -->
+    <div id="ClippyBird - Open Source Bird Feeder" class="project-section">
+        <h2 class="centered-h2">ClippyBird - Open Source Bird Feeder</h2>
+        <div class="centered-image" style="margin-top: 20px;">
+            <img src="images/ClippyBird_Progress.png" alt="ClippyBird_Progress">
+        </div>
+        <main class="container">
+            <p>The project that me and my group are currently about to start working on for my senior project
+                is a Picture-capturing Birdfeeder. The overall purpose of this project is to see as a group what
+                we all can accomplish and present it to our professors. As a group, we will be making an open-
+                source design so that anyone can replicate it making it the affordable option for the market. The
+                bird feeder is going to be composed of a motion sensor that will trigger the camera to take a
+                picture of the bird that is landing to get food. The picture will be taken, processed, and sent off
+                to a database via a Raspberry Pi that we are programming. The database will be hosted
+                elsewhere, and to make the information available, we are making a user-friendly website so that
+                you will be able to access and see what just came by! While this is still in the making, we are still
+                waiting for approval.</p>
+        </main>
+    </div>
 
+    <!-- Project 3 -->
+    <div id="Plane Ticketing System in JavaScript" class="project-section">
+        <h2 class="centered-h2">Plane Ticketing System in JavaScript</h2>
+        <div class="video-container" style="margin-top: 20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eAjw5U63Gdk?si=EYb61epmdEIk8Rki" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <main class="container">
+            <p>This group project involved creating a ticketing system for plane and bus reservations. Developed using JavaScript, the program integrates HTML to form the webpage interface. Hosted locally, the application employs Docker for the database backend. This endeavor served as a significant challenge for my JavaScript coding abilities, as I had limited prior experience with the language. However, through perseverance and dedication, I emerged from the project with heightened proficiency and self-assurance in my coding skills.</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
     <footer class="container footer">
         <div class="footer-icons">
             <div class="footer-icon">
@@ -74,6 +108,5 @@
         <p>Author: Benjamin Clark<br>
         &copy; 2024 Benjamin Clark</p>
     </footer>
-
 </body>
 </html>

@@ -1,6 +1,5 @@
-/* Add this CSS to your existing style.css file */
-
 main {
+  flex: 1;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px;
@@ -12,15 +11,17 @@ main p {
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .footer {
   position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
   font-size: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
   padding: 20px;
   background-image: url('images/Footer_Image.jpg');
   background-size: cover;
@@ -82,6 +83,8 @@ body {
   color: #22242c;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -316,7 +319,7 @@ figcaption {
   }
 
   .container {
-    padding: 0 10px;
+    padding: 10px 10px 80px;
     flex: 1;
   }
 
@@ -365,11 +368,29 @@ figcaption {
   }
 
   .footer {
-    font-size: 12px;
-    padding: 10px;
-    height: 10px;
+    height: auto; /* Remove fixed height */
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin-top: 20px; /* Ensure the footer sticks to the bottom */
   }
 
+  .container.footer {
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    bottom: 0; /* Stick it to the bottom */
+    width: 100%; /* Take up the full width */
+    height: 9%;
+    padding: 5px;
+    font-size: 10px;
+
+     /* Adjust padding as needed */
+  }
+  .centered-image img {
+    max-width: 100%; /* Set maximum width to 100% of the viewport width */ /* Allow the height to adjust proportionally */
+  }
+
+  .project-section h2 {
+    margin-top: 5px; /* Adjust margin as needed */
+    margin-bottom: 5px; /* Adjust margin as needed */
+  }
   form {
     width: 100%;
     max-width: 500px;
@@ -408,6 +429,7 @@ figcaption {
   }
 
   .video-container {
+    margin-top: 20px; 
     padding-bottom: 56.25%; 
     width: 80%; 
     margin: 0 auto;
@@ -421,7 +443,12 @@ figcaption {
     height: 100%;
   }
 
+  header {
+    margin-bottom: 20px; /* Add padding to the bottom of the header */
+  }
+
   table {
     width: 100%;
   }
+
 }
