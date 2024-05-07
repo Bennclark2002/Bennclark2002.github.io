@@ -32,9 +32,9 @@
                 <li class="dropdown">
                     <a href="project.html">Projects</a>
                     <ul class="dropdown-content">
-                        <li><a href="project.html#F1 Stats Mobile App for iOS">F1 Stats</a></li>
-                        <li><a href="project.html#ClippyBird - Open Source Bird Feeder">ClippyBird</a></li>
-                        <li><a href="project.html#Plane Ticketing System in JavaScript">Ticketing System</a></li>
+                        <li><a href="project.html#F1-Stats-Mobile-App-for-iOS">F1 Stats</a></li>
+                        <li><a href="project.html#ClippyBird - Open-Source-Bird-Feeder">ClippyBird</a></li>
+                        <li><a href="project.html#Plane-Ticketing-System-in-JavaScript">Ticketing System</a></li>
                     </ul>
                 </li>
             </ul>
@@ -42,7 +42,7 @@
     </nav>    
 
     <header>
-        <h1 class="centered-h1">Welcome to my Webpage!</h1>
+        <h1 class="centered-h1">Welcome to my Web page!</h1>
     </header>
 
     <div class="video-container">
@@ -91,7 +91,7 @@
             </figure>
         </div>
     </main>
-    
+    <p>Visitor count: <span id="visitor-count">0</span></p>  
     <footer class="container footer">
         <div class="footer-icons">
             <div class="footer-icon">
@@ -106,6 +106,25 @@
         <p>Author: Benjamin Clark<br>
         &copy; 2024 Benjamin Clark</p>
     </footer>
+
+    <script>
+        function incrementVisitorCount() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.getItem("visitorCount")) {
+                    var count = parseInt(localStorage.getItem("visitorCount"));
+                    count++;
+                    localStorage.setItem("visitorCount", count);
+                } else {
+                    localStorage.setItem("visitorCount", 1);
+                }
+                document.getElementById("visitor-count").innerText = localStorage.getItem("visitorCount");
+            } else {
+                document.getElementById("visitor-count").innerText = "LocalStorage not supported";
+            }
+        }
+
+        window.onload = incrementVisitorCount;
+    </script>
 
 </body>
 </html>
